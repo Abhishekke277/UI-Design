@@ -1,0 +1,254 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contanar {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.first-setting h4 {
+    margin: 0;
+}
+
+#para {
+    font-size: .85rem;
+    color: #555;
+}
+
+.last {
+    display: flex;
+    align-items: center;
+}
+
+.ram {
+    width: 150px;
+    height: 30px;
+    padding-left: 2.5rem;
+    background-image: url(Download.png);
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button {
+    background-color: rgb(43, 43, 171);
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(33, 33, 141);
+}
+
+.big-contanar {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of containers */
+    gap: 20px; /* Space between containers */
+}
+
+.first-contanar, .second-contanar {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 48%; /* Each of the first two containers will take up 48% of the width */
+    box-sizing: border-box;
+}
+
+.third-contanar {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 47.8%; /* The third container will take the full width */
+    box-sizing: border-box;
+}
+
+.slider-big {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.c10 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.switch-container {
+    display: inline-block;
+    margin-top: 0.3rem;
+    text-align: center;
+    border: 3px solid white;
+}
+
+.text-above {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.switch input:checked + .slider:after {
+    content: "ON";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 6px;
+    left: 10px;
+}
+
+.switch input:not(:checked) + .slider:after {
+    content: "OFF";
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul li h4 {
+    font-size: 14px;
+    color: #333;
+}
+
+ul li:last-child {
+    margin-right: 0;
+}
+
+.delete {
+    display: flex;
+    background-color: solid white;
+    border: 3px solid rgb(189, 177, 177);
+    margin-left: 15rem;
+}
+
+.de-icone {
+    border: 3px solid white;
+    background-color: solid white;
+    color: red;
+    left: 3rem;
+}
+.last-input {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    gap: 10px; /* Adds space between the inputs */
+}
+
+.last-input label {
+    font-size: 14px; /* Adjust label size if necessary */
+    color: #333; /* Adjust label color */
+}
+
+.last-input input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+form{
+    font-size: 10px;
+}
+.second-last{
+    border: 3px solid  rgb(196, 182, 182);
+
+}
+.class-center{
+    text-align: center;
+    border: 2px solid rgb(194, 192, 188);
+    text-align: center;
+    font-size: 1rem;
+    opacity: 50%;
+    margin-top: 2rem;
+}
+
+.last-over{
+    border: 1px solid rgb(196, 182, 182);
+}
+
+.compelete{
+    gap: 1rem;
+    margin: 5px;
+    padding: 5px;
+    
+    
+}
